@@ -5,40 +5,23 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <script src=''></script>
-    <link rel='stylesheet' href=''>
+    <link rel='stylesheet' href='Template.css'>
     <link rel='icon' href='bili/img/bili.ico'>
     <style>
         body {
-            background: rgb(210 233 251) url(img/back.png) fixed no-repeat;
+            background: url(img/back.png) fixed no-repeat;
+            backdrop-filter: blur(5px);
         }
 
         .app {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
+            position: relative;
+            height: 100vh;
         }
 
-        a {
-            outline: none;
-            text-decoration: none;
-            padding: 2px 1px 0;
-        }
-
-        a:link,
-        a:visited {
-            color: rgba(254, 172, 195, 0.9);
-        }
-
-        a:focus,
-        a:hover {
-            background: rgba(251, 114, 153, 0.082);
-        }
-
-        a:active {
-            background: rgba(251, 114, 153, 0.26);
-            color: rgba(255, 161, 188, 0.9);
+        .temp {
+            margin: 50px auto;
         }
     </style>
     <title>Fish</title>
@@ -46,8 +29,11 @@
 
 <body>
     <div class="app">
-        <p>其实只是在试试 GitHub Pages 啦</p>
-        <a href="bili/">动态首页</a>
+        <div class="temp">
+            <p>其实只是在试试 <b>GitHub Pages</b> 啦 ——
+                <a href="bili/" style="color: var(--red_purple);">动态首页</a>
+            </p>
+        </div>
     </div>
 </body>
 
