@@ -1,29 +1,14 @@
 <!DOCTYPE html>
+<html lang="zh">
 
 <head>
     <meta charset='UTF-8'>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-    <script src=''></script>
-    <link rel='stylesheet' href='Template.css'>
+    <script src='styles/fish.js'></script>
+    <link rel='stylesheet' href='styles/Template.css'>
+    <link rel="stylesheet" href="styles/index.css">
     <link rel='icon' href='bili/img/bili.ico'>
-    <style>
-        body {
-            background: url(img/back.png) fixed no-repeat;
-            backdrop-filter: blur(5px);
-        }
-
-        .app {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            height: 100vh;
-        }
-
-        .temp {
-            margin: 50px auto;
-        }
-    </style>
     <title>Fish</title>
 </head>
 
@@ -33,6 +18,7 @@
             <p>其实只是在试试 <b>GitHub Pages</b> 啦 ——
                 <a href="bili/" style="color: var(--red_purple);">动态首页</a>
             </p>
+            <p id="get_ua" style="cursor: pointer;">点击获取浏览器 UA：<b id="ua"></b></p>
         </div>
     </div>
 </body>
